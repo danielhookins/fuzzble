@@ -1,0 +1,28 @@
+div.container {
+	height:300px;
+}
+div.fuzzble {
+	padding: 4px;
+	width: 80px;
+	height:80px;
+	position:fixed;
+	border-radius: 12px;
+	border: 1px solid #54DE54;
+    box-shadow: 0px 0px 5px #54DE54, inset 0px 0px 2px #54DE54;
+    
+    -webkit-transform: rotate(77deg);
+    -moz-transform: rotate(77deg);
+    -o-transform: rotate(77deg);
+    -ms-transform: rotate(77deg);
+    transform: rotate(77deg);
+
+    background: rgb(127, 230, 127);
+    /* background: rgba(127, 230, 127, .88); */
+}
+div.fuzzble p {
+	color: #102c10;
+	font-size:22px;
+	font-weight: 900;
+	text-align: center;
+	vertical-align: middle;
+}
