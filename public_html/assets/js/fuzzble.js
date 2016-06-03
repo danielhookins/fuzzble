@@ -4,6 +4,21 @@ $(document).ready(function(){
 
     oldDirection = "right";
     animateDiv();
+
+    $(".fuzzble").mouseover(function () {
+      $('.fuzzble p')
+        .text(": D");
+
+        rotate(90);
+    });
+
+    $(".fuzzble").mouseout(function () {
+      $('.fuzzble p').text(": )");
+    });
+
+    $(".fuzzble").click(function () {
+      $('.fuzzble p').text("= D");
+    });
     
 });
 

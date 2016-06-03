@@ -14,7 +14,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 		<h2>Fuzzble</h2>
 
-		<div class='fuzzble'><p>: D</p></div>
+		<div class='fuzzble'><p>: )</p></div>
 
 	</div>
 	<script src="/assets/js/jquery-1.12.4.js"></script>
