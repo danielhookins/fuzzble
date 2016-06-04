@@ -19,6 +19,12 @@ $(document).ready(function(){
     $(".fuzzble").click(function () {
       $('.fuzzble p').text("= D");
     });
+
+    setInterval(function(){
+      $(".statistics")
+        .load('/statistics.php');
+    }, 3000)
+    
     
 });
 

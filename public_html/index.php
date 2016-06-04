@@ -1,7 +1,11 @@
 <?php
 namespace Fuzzble;
 
+use Fuzzble\Fuzzble;
+
 require __DIR__ . '/../vendor/autoload.php';
+
+$fuzzble = new Fuzzble('Fuzzble');
 
 ?>
 <html>
@@ -12,7 +16,8 @@ require __DIR__ . '/../vendor/autoload.php';
 <body>
 	<div class="container"> 
 
-		<h2>Fuzzble</h2>
+		<h2><?php echo $fuzzble->name ?></h2>
+		<div class="statistics"></div>
 
 		<div class='fuzzble'><p>: )</p></div>
 
