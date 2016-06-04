@@ -5,7 +5,13 @@ use Fuzzble\Fuzzble;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$fuzzble = new Fuzzble('Fuzzble');
+$dotenv = new \Dotenv\Dotenv(__DIR__ . '/../');
+
+$dotenv->load();
+
+require __DIR__ . '/../config/database.php';
+
+$fuzzble = Fuzzble::first()->toArray();
 
 ?>
 <html>
@@ -16,7 +22,7 @@ $fuzzble = new Fuzzble('Fuzzble');
 <body>
 	<div class="container"> 
 
-		<h2><?php echo $fuzzble->name ?></h2>
+		<h2><?php echo $fuzzble['name'] ?></h2>
 		<div class="statistics"></div>
 
 		<div class='fuzzble'><p>: )</p></div>

@@ -1,22 +1,13 @@
 <?php
 namespace Fuzzble;
 
-class Fuzzble 
+use Illuminate\Database\Eloquent\Model as Eloquent;
+
+class Fuzzble extends Eloquent
 {
 	
-	public $name;
-	public $bornTime;
+	protected $table = "fuzzble";
 
-	public function __construct($name) {
-
-		$this->name = $name;
-		$this->bornTime = time();
-
-	}
-
-	public function getAge() {
-		$age = (time() - $this->bornTime) / 60;
-		return $age;
-	}
+	protected $fillable = ['name'];
 
 }
