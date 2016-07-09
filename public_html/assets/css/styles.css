@@ -1,28 +1,81 @@
-div.container {
-	height:300px;
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+}
+div.header {
+	background-color: #ffffff;
+	padding: 10px 25px;
+	vertical-align: top;
+}
+div.header h1, h2, h3, h4 {
+	color: #df744a;
+	font-family: 'Chewy', cursive;
+}
+div.header h2 {
+	font-size: 2em;
+	letter-spacing: 2px;
+}
+div.nav {
+	min-height: 30px;
+	background-color: #fedcd2;
+	vertical-align: top;
+	padding: 5px;
+}
+div.nav ul {
+	list-style-type: none;
+}
+div.nav ul li {
+	display:inline;
+	padding: 0px 10px;
+}
+div.nav ul li a {
+	color: #535353;
+	font-size: 12px;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+div.nav ul li a:hover {
+	color: #df744a;
+}
+div.fuzzble-environment{
+	min-height: 300px;
+	background-color: #bfd8d2;
 }
 div.fuzzble {
-	padding: 4px;
 	width: 80px;
 	height:80px;
 	position:fixed;
 	border-radius: 12px;
-	border: 1px solid #54DE54;
-    box-shadow: 0px 0px 5px #54DE54, inset 0px 0px 2px #54DE54;
-    
-    -webkit-transform: rotate(77deg);
-    -moz-transform: rotate(77deg);
-    -o-transform: rotate(77deg);
-    -ms-transform: rotate(77deg);
-    transform: rotate(77deg);
+	border: 1px solid #dcb239;
+	box-shadow: 0px 0px 5px #faebd7, inset 0px 0px 2px #dcb239;
 
-    background: rgb(127, 230, 127);
-    /* background: rgba(127, 230, 127, .88); */
+	-webkit-transform: rotate(77deg);
+	-moz-transform: rotate(77deg);
+	-o-transform: rotate(77deg);
+	-ms-transform: rotate(77deg);
+	transform: rotate(77deg);
+
+	background-color: #dcb239;
 }
 div.fuzzble p {
-	color: #102c10;
+	color: #ffffff;
 	font-size:22px;
 	font-weight: 900;
 	text-align: center;
 	vertical-align: middle;
+}
+div.attention-box {
+	position: absolute;
+	z-index: 99;
+	right: 30px;
+	margin-top: 10px;
+	width: 200px;
+	padding: 20px 5px;
+	background-color: #df744a;
+	color: #ffdcd2;
+	border-radius: 5px;
+	text-align:center;
+	font-size: 14px;
 }

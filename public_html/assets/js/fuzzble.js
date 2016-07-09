@@ -1,5 +1,7 @@
 var oldDirection;
 
+$('div.attention-box').hide();
+
 $(document).ready(function(){
 
     oldDirection = "right";
@@ -25,7 +27,8 @@ $(document).ready(function(){
         .load('/statistics.php');
     }, 3000)
     
-    
+    $('div.attention-box').text('Welcome to Fuzzble').fadeIn(2000).delay(2000).fadeOut(2000);
+
 });
 
 function makeNewPosition(){
