@@ -21,12 +21,7 @@ $(document).ready(function(){
     $(".fuzzble").click(function () {
       $('.fuzzble p').text("= D");
     });
-
-    setInterval(function(){
-      $(".statistics")
-        .load('/statistics.php');
-    }, 3000)
-    
+   
     $('div.attention-box').text('Welcome to Fuzzble').fadeIn(2000).delay(2000).fadeOut(2000);
 
 });

@@ -36,7 +36,6 @@ $fuzzble = Fuzzble::first()->toArray();
 			</ul> -->
 		</div>
 		<div class="fuzzble-environment">
-			<div class="statistics"></div>
 			<div class='fuzzble'><p>: )</p></div>
 			<div class="attention-box"></div>
 		</div>
